@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".note_description">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/note_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="#fff"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_margin="7dp">
+
+        </EditText>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="bottom"
+        android:text="Delete"
+        android:textColor="@color/colorPrimary"
+        android:drawableTop="@android:drawable/ic_menu_delete"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:paddingBottom="10dp"
+        android:visibility="gone"/>
+</LinearLayout>
